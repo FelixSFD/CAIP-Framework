@@ -1,5 +1,5 @@
 # CAIP-Framework
-This collection of classes will help you tor work with IP-addresses.
+This collection of classes will help you to work with IP-addresses.
 
 You can compare them or check, if an IP is in a specific range.
 
