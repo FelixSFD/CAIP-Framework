@@ -1,6 +1,6 @@
 //
-//  CAIP.swift
-//  CampusApp
+//  CAIPFramework.swift
+//  CAIPFramework
 //
 //  Created by Felix Deil on 21.12.15.
 //  Copyright © 2015 University Augsburg. All rights reserved.
@@ -12,7 +12,7 @@ import Foundation
 // - MARK: IPv4-Class
 /**
 Defines an IPv4-address
-- since: Version: 1.1.0 (554)
+- since: 1.0
 - author: Felix Deil
 */
 @objc public class IPv4:NSObject {
@@ -22,7 +22,7 @@ Defines an IPv4-address
     // - MARK: Initializers
     /**
     Initialize an IPv4-address by a list of Integers
-    - since: Version: 1.1.0 (554)
+    - since: 1.0
     - author: Felix Deil
     */
     init(withSegments segment1:Int, segment2:Int, segment3:Int, segment4:Int) {
@@ -32,7 +32,7 @@ Defines an IPv4-address
     /**
      Initialize an IPv4-address with a string
      - parameter string: The IP as string. For example `127.0.0.1`
-     - since: Version: 1.1.0 (554)
+     - since: 1.0
      - author: Felix Deil
      */
     init(withString string:String) {
@@ -45,7 +45,7 @@ Defines an IPv4-address
     /**
      Initialize an IPv4-address with an IPv4-object
      - parameter ip: The IPv4-object
-     - since: Version: 1.1.0 (554)
+     - since: 1.0
      - author: Felix Deil
      */
     init(withIP ip:IPv4) {
@@ -56,7 +56,7 @@ Defines an IPv4-address
     // - MARK: Return IP
     /**
     Returns the IPv4-address as string
-    - since: Version: 1.1.0 (554)
+    - since: 1.0
     - author: Felix Deil
     */
     public func asString() -> String {
@@ -65,7 +65,7 @@ Defines an IPv4-address
     
     /**
      Returns the IPv4-address as [Int]
-     - since: Version: 1.1.0 (554)
+     - since: 1.0
      - author: Felix Deil
      */
     public func asArray() -> [Int] {
@@ -123,7 +123,7 @@ Defines a range of IPs (IPv4 only!)
 
 You need to initialize this with the start- and the end-IP
 
-- since: Version: 1.1.0 (554)
+- since: 1.0
 - author: Felix Deil
 - seealso: IPv4
 */
@@ -157,7 +157,7 @@ You need to initialize this with the start- and the end-IP
     Checks whether the IP is in this IP-range
     - parameter ip: The IP to check
     - returns: `true` if the IP is in the IPv4Range
-    - since: Version: 1.1.0 (554)
+    - since: 1.0
     */
     public func isInRange(ip:IPv4) -> Bool {
         if (ip.isHigherThanIP(self.startIP) && ip.isLowerThanIP(endIP)) || ip.isEqualToIP(startIP) || ip.isEqualToIP(endIP) {
